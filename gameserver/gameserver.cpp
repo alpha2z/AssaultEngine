@@ -57,6 +57,7 @@ int main(int argc, char const *argv[]) {
 	read_config_file(L);
 
 
+	// this is a copy.
 	struct hive_config config;
 	const char * path = set_env_string("lua_path", "./lualib/?.lua;./lualib/?/init.lua");
 	setenv("LUA_PATH", path, 1);
